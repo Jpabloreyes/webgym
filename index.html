@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitnes Gym</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/4a81bece5a.js" crossorigin="anonymous" samesite="none" ></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <div class="contenedor">
+                <p class="logo">Fitness Gym Home</p>
+                <img src="imagenes/menu.png" class="menu-icon" alt="">
+                 <nav>
+                 <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="intro">
+        <div class="izquierda">
+            <p>Grandote.Fuertote.Musculote</p>
+            <h1>Juan Pablo Gym</h1>
+            <a href="">Estas listo para comenzar?</a>
+        </div>
+        <div class="derecha">
+            <div class="contenido">
+                <p>Prueba 3 dias de gimnasio GRATIS</p>
+                <a href="">Crea tu Credencial</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <div class="contenedor">
+            <div class="rojo cero">0.00</div>
+            <div class="rojo ini">Invitacion Gratis</div>
+            <h2>Programas Funcionales</h2>
+            <p>Bienvenido a la mejor opcion de gimnasio que vas a tener en tu vida. Experiencias unicas
+                con lo ultimo en maquinas y entrenadores que haran que tu entrenamiento sea tu estilo de vida. 
+                Contamos con todo lo necesario para que des el paso hoy. Animate, sueña, cree en ti. El resto dejalo
+                en nosotros.
+            </p>
+            <a href="">Todos los Programas</a>
+            <div class="contenedor-programs">
+                <div class="program" id="uno">
+                    <h3>Personal Trainner</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetuquuntur eum reiciendis delectus nisi? Impedit ullam aut ratione. Molestias dolor sed assumenda, quam voluptas autem harum blanditiis dolorum. Facilis recusandae ipsum nulla voluptatum omnis?</p>
+                </div>
+                <div class="program" id="dos"> 
+                    <h3>Personal Trainner</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nihil vero saepe quisquam, voluptas adipisci dicta obcaecati voluptate placeat distinctio nulla cum veniam rum. Facilis recusandae ipsum nulla voluptatum omnis?</p></div>
+                <div class="program" id="tres"> 
+                    <h3>Personal Trainner</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus nihil vero saepe quisquam, voluptas adipisci dicta obcaecati voluptate placeat distinctio nulla cum veniam earum quasi, consequuntur eum reum nulla voluptatum omnis?</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-video">
+        <div class="contenedor">
+            <video id="video" width="900px" height="600px" src="imagenes/video.mp4"></video>
+            <div class="botones">
+                <button id="boton" onclick="playVideo()"><i class="far fa-play-circle"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+    
+    var video = document.getElementById("video");
+    var boton = document.getElementById("boton");
+
+    function playVideo() {
+        video.play();
+        boton.style.display="none";
+    }
+
+    video.addEventListener("ended",function(){
+        boton.style.display="block"
+    })
+    
+    
+    
+    </script>
+
+    <section id="join">
+        <div class="izquierda">
+            <a href="">Unete Ahora</a>
+            <img id="uno" src="imagenes/izq.jpg" alt="">
+        </div>
+        <div class="derecha">
+            <img id="dos" src="imagenes/der1.jpg" alt="">
+            <img id="tres" src="imagenes/der2.jpg" alt="">
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <div class="contenedor">
+            <span class="comillas">"</span>
+            <h2>Opiniones</h2>
+            <a href="">Unete al Movimiento</a>
+            <div class="contenedor-testimonials">
+                <div class="testimonial">
+                    <div class="contenido">
+                    <div class="foto1"></div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perferendis excepturi quisquam placeat vero et voluptatem sed accusamus sunt amet alias natus atque, quia veritatis veniam reiciendis perspiciatis harum laboriosam. Adipisci inventore culpa possimus architecto, magnam autem saepe hic natus!.</p>
+                    </div>  
+                    <p class="nombre">Carlos Romero</p>
+                </div>
+                <div class="testimonial">
+                        <div class="contenido">
+                        <div class="foto2"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi provident sit deserunt minus impedit natus velit voluptates eum, non fugiat accusantium, commodi voluptatum cupiditate quidem tempore! Praesentium quae qui sunt suscipit consequuntur distinctio at facilis quis? Esse, exercitationem obcaecati?.</p>
+                        </div>
+                        <p class="nombre">Braian Ocampo</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="izquierda">
+            <p>Grandote.Fuertote.Musculote</p>
+            <h2>Contactanos</h2>
+            <form action="">
+                <input type="text" placeholder="Nombre">
+                <input type="email"placeholder="Correo Electronico">
+                <textarea placeholder="Deja tu Mensaje"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="derecha">
+            <div class="gym-horas">
+                <h3>Horarios del Gym</h3>
+                <ul>
+                    <li>Lunes - Viernes: 5 am - 11pm</li>
+                    <li>Sabados : 5 am - 10pm</li>
+                    <li>Domingos: 5 am - 9pm</li>
+                </ul>
+            </div>
+
+            <div class="pass">
+                <h3>Gratis 3 dias de Gym</h3>
+                <a href="">¡Oprime Aqui!</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
